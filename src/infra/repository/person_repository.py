@@ -56,6 +56,9 @@ class PersonRepository:
                 person = db.session.query(Person).filter(
                     Person.name_user == name_user
                 ).one_or_none()
+
+                print(f"find_by_name result for {name_user}: {person}")
+
                 return person
         except Exception as e:
             print(f'Error finding person by name {str(e)}')

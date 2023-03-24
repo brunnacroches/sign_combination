@@ -19,10 +19,9 @@ def register_person_route():
 @app.route("/register/search_combination/", methods=["GET"])
 def search_person_route():
     search_route = SearchCombinationViews()
-    
+
     http_response = search_route.search_combination_views(request.args)
 
-    # if "data" not in http_response:
-    #     return jsonify({"error": "Data not found in response."}), 500
+    print(f"http_response: {http_response}")
 
     return jsonify(http_response["data"]), http_response["status_code"]
