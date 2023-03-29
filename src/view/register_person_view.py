@@ -29,5 +29,7 @@ class RegisterPersonViews:
             }
             
 
-        except Exception as exception:
-            return error_handler_method(exception)
+        except Exception as e:
+            # Registre o erro e retorne um dicionário com uma mensagem de erro e um código de status de erro
+            print(f"Erro ao registrar a pessoa: {e}")
+            return {"data": {"error": "Ocorreu um erro ao registrar a pessoa."}, "status_code": 500}    

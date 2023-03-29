@@ -1,9 +1,10 @@
 from src.controllers.register_person_controller import RegisterPersonController
 from src.infra.repository.person_repository import PersonRepository
+from src.infra.configs.connection import DBConnectionHandler
 
 class SearchCombinationController:
     def __init__(self):
-        self.db_repository = PersonRepository()
+        self.db_repository = PersonRepository(DBConnectionHandler)
 
     def _is_sign_compatible(self, sign_first:str, sign_second: str) -> bool:
         # 1- implementar a logica de compatibilidade entre os signos

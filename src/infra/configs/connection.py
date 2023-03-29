@@ -30,3 +30,7 @@ class DBConnectionHandler:
     def __exit__(self, exc_type, exc_val, exc_tb):
         # Fechando a sessão atual
         self.session.close()
+
+    # Adicionando este método à classe DBConnectionHandler
+    def get_connection_string(self):
+        return self.__connection_string
