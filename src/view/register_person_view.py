@@ -1,8 +1,8 @@
 from cerberus import Validator
-from src.validators.validate_register import validate_register_user_request_body
-from src.controllers.register_person_controller import RegisterPersonController
-from src.error_handling.validation_error import ValidationError
-from src.error_handling.error_handler import error_handler_method
+from ..validators.validate_register import validate_register_user_request_body
+from ..controllers.register_person_controller import RegisterPersonController
+from ..error_handling.validation_error import ValidationError
+from ..error_handling.error_handler import error_handler_method
 
 class RegisterPersonViews:
     def register_person_view(self, request):

@@ -1,4 +1,4 @@
-from src.error_handling.validation_error import ValidationError
+from ..error_handling.validation_error import ValidationError
 import traceback
 
 # obter mais informações sobre o erro para ajudar na depuração, você pode 

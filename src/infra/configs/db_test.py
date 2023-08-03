@@ -1,5 +1,5 @@
-from src.infra.configs.connection import DBConnectionHandler
-from src.infra.entities.person_entities import Person
+from ...infra.configs.connection import DBConnectionHandler
+from ...infra.entities.person_entities import Person
 
 def test_db_connection():
     connection_handler = DBConnectionHandler()

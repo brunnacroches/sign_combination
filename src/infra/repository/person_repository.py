@@ -1,4 +1,4 @@
-from src.infra.entities.person_entities import Person
+from ...infra.entities.person_entities import Person
 
 class PersonRepository:
     def __init__(self, ConnectionHandler) -> None:

@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from src.infra.configs.connection import DBConnectionHandler
+from ...infra.configs.connection import DBConnectionHandler
 
 # Criando uma instância do manipulador de conexão do banco de dados
 db_handler = DBConnectionHandler()

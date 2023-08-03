@@ -1,7 +1,7 @@
 from flask import request, jsonify, make_response
-from src.main.server.server_flask import app
-from src.view.register_person_view import RegisterPersonViews
-from src.view.search_combination_view import SearchCombinationViews
+from ...main.server.server_flask import app
+from ...view.register_person_view import RegisterPersonViews
+from ...view.search_combination_view import SearchCombinationViews
 
 @app.route("/register", methods=["POST"])
 def register_person_route():

@@ -1,8 +1,8 @@
 from cerberus import Validator
-from src.validators.validate_search import validate_search_user_query_params
-from src.controllers.search_combination_controller import SearchCombinationController
-from src.error_handling.error_handler import error_handler_method
-from src.error_handling.validation_error import ValidationError
+from ..validators.validate_search import validate_search_user_query_params
+from ..controllers.search_combination_controller import SearchCombinationController
+from ..error_handling.error_handler import error_handler_method
+from ..error_handling.validation_error import ValidationError
 
 class SearchCombinationViews:
     # Método para tratar a requisição da rota e retornar a resposta da pesquisa de combinação de signos

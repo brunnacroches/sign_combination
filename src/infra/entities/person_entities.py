@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Integer
-from src.infra.configs.base import Base
+from ...infra.configs.base import Base
 
 class Person(Base):
     __tablename__ = 'person'

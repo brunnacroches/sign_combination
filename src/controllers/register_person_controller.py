@@ -1,5 +1,5 @@
-from src.infra.repository.person_repository import PersonRepository
-from src.infra.configs.connection import DBConnectionHandler
+from ..infra.repository.person_repository import PersonRepository
+from ..infra.configs.connection import DBConnectionHandler
 
 class RegisterPersonController:
     def __init__(self):

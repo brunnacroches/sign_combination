@@ -2,8 +2,8 @@ import pytest
 from mock_alchemy.mocking import UnifiedAlchemyMagicMock
 from unittest import mock
 from unittest.mock import MagicMock, patch
-from src.infra.entities.person_entities import Person
-from src.infra.repository.person_repository import PersonRepository
+from ...infra.entities.person_entities import Person
+from ...infra.repository.person_repository import PersonRepository
 import os
 
 os.environ["SQLALCHEMY_WARN_20"] = "1"

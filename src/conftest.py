@@ -1,8 +1,8 @@
 import pytest
-from src.infra.configs.base import Base
-from src.infra.configs.connection import DBConnectionHandler
+from .infra.configs.base import Base
+from .infra.configs.connection import DBConnectionHandler
 
-from src.main.server.server_flask import app
+from .main.server.server_flask import app
 
 @pytest.fixture(scope="session")
 def test_app():

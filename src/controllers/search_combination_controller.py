@@ -1,6 +1,6 @@
-from src.controllers.register_person_controller import RegisterPersonController
-from src.infra.repository.person_repository import PersonRepository
-from src.infra.configs.connection import DBConnectionHandler
+from ..controllers.register_person_controller import RegisterPersonController
+from ..infra.repository.person_repository import PersonRepository
+from ..infra.configs.connection import DBConnectionHandler
 
 class SearchCombinationController:
     def __init__(self):
